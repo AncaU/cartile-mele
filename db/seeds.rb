@@ -18,6 +18,6 @@ language_create = ->(element) {Language.create(language: element.capitalize)}
 
 %w(romana engleza franceza italiana rusa).each(&language_create)
 
-domain_create = ->(element) {Domain.create(language: element.capitalize)}
+domain_create = ->(element) {Domain.create(desc: element.capitalize)}
 
 %w(beletristica poezie matematica pedagogie metodica politica fizica).each(&domain_create)
