@@ -5,4 +5,6 @@ class Book < ApplicationRecord
   belongs_to :state
   belongs_to :book_type
 
+  #validates
+
 end

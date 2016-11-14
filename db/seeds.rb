@@ -14,3 +14,10 @@ state_create = ->(state) {State.create(desc: state)}
 
 %w(new as_new used_very_good_condition used_good_condition used_medium_condition).each(&state_create)
 
+language_create = ->(element) {Language.create(language: element.capitalize)}
+
+%w(romana engleza franceza italiana rusa).each(&language_create)
+
+domain_create = ->(element) {Domain.create(language: element.capitalize)}
+
+%w(beletristica poezie matematica pedagogie metodica politica fizica).each(&domain_create)
