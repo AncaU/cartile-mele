@@ -9,15 +9,15 @@
   <dt><strong><%= model_class.human_attribute_name(:price) %>:</strong></dt>
   <dd><%= @book.price %></dd>
   <dt><strong><%= model_class.human_attribute_name(:domain_id) %>:</strong></dt>
-  <dd><%= @book.domain_id %></dd>
+  <dd><%= @book.domain.display_name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:active) %>:</strong></dt>
   <dd><%= @book.active %></dd>
   <dt><strong><%= model_class.human_attribute_name(:state_id) %>:</strong></dt>
-  <dd><%= @book.state_id %></dd>
+  <dd><%= @book.state.display_name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:book_type_id) %>:</strong></dt>
-  <dd><%= @book.book_type_id %></dd>
+  <dd><%= @book.book_type.display_name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:language_id) %>:</strong></dt>
-  <dd><%= @book.language_id %></dd>
+  <dd><%= @book.language.display_name %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),

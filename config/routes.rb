@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'pages/home'
+
+  get 'pages/about'
+
   resources :languages
   resources :domains
   resources :book_types
