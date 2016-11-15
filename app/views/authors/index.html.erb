@@ -20,7 +20,7 @@
         <td><%= link_to author.id, author_path(author) %></td>
         <td><%= author.first_name %></td>
         <td><%= author.last_name %></td>
-        <td><%= author.ethnic_id %></td>
+        <td><%= author.ethnic.display_name rescue '' %></td>
         <td><%= author.birth_year %></td>
         <td><%=l author.created_at %></td>
         <td>

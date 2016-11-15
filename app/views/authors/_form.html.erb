@@ -32,7 +32,7 @@
   <div class="form-group">
     <%= f.label :ethnic_id, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :ethnic_id, :class => 'form-control' %>
+      <%= f.select :ethnic_id, Ethnic.all.map{|a| [a.display_name, a.id]}, {include_blank: true} %>
     </div>
     <%=f.error_span(:ethnic_id) %>
   </div>

@@ -9,7 +9,7 @@
   <dt><strong><%= model_class.human_attribute_name(:last_name) %>:</strong></dt>
   <dd><%= @author.last_name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:ethnic_id) %>:</strong></dt>
-  <dd><%= @author.ethnic_id %></dd>
+  <dd><%= @author.ethnic.display_name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:birth_year) %>:</strong></dt>
   <dd><%= @author.birth_year %></dd>
 </dl>
